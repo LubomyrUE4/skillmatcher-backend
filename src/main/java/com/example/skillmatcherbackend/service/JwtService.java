@@ -52,6 +52,7 @@ public class JwtService {
     private JWTResponse getJWTResponse(UserDocument user, String accessToken, String refreshToken) {
         final JWTResponse jwtResponse = new JWTResponse();
         jwtResponse.setId(user.getId());
+        jwtResponse.setRole(user.getRole());
         jwtResponse.setAccessToken(accessToken);
         jwtResponse.setRefreshToken(refreshToken);
         jwtResponse.setExpiresAt(String.valueOf(jwtExpiresAt));

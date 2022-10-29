@@ -7,6 +7,7 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 public class JWTResponse {
     private String id;
+    private UserRole role;
     private String accessToken;
     private String refreshToken;
     private String expiresAt;
