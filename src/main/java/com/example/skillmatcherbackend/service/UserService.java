@@ -54,6 +54,7 @@ public class UserService implements UserDetailsService {
         profileResponse.setSkills(userDocument.getSkills());
         profileResponse.setWorkPreference(userDocument.getWorkPreference());
         profileResponse.setPhoto(userDocument.getPhoto());
+        profileResponse.setRole(userDocument.getRole());
         return profileResponse;
     }
 
