@@ -31,8 +31,7 @@ public class UserDocument implements UserDetails {
     private String city;
     private String country;
     private Boolean openToTravel;
-    private String primaryPhoneNumber;
-    private String secondaryPhoneNumber;
+    private String phoneNumber;
 
     @Override
     public Collection<? extends GrantedAuthority> getAuthorities() {

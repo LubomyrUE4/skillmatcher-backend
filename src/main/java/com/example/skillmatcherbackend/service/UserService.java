@@ -48,8 +48,7 @@ public class UserService implements UserDetailsService {
         profileResponse.setResume(userDocument.getResume());
         profileResponse.setCountry(userDocument.getCountry());
         profileResponse.setOpenToTravel(userDocument.getOpenToTravel());
-        profileResponse.setPrimaryPhoneNumber(userDocument.getPrimaryPhoneNumber());
-        profileResponse.setSecondaryPhoneNumber(userDocument.getSecondaryPhoneNumber());
+        profileResponse.setPhoneNumber(userDocument.getPhoneNumber());
         profileResponse.setCity(userDocument.getCity());
         profileResponse.setSkills(userDocument.getSkills());
         profileResponse.setWorkPreference(userDocument.getWorkPreference());
@@ -91,8 +90,7 @@ public class UserService implements UserDetailsService {
         userDocument.setResume(profileDTO.getResume());
         userDocument.setCountry(profileDTO.getCountry());
         userDocument.setOpenToTravel(profileDTO.getOpenToTravel());
-        userDocument.setPrimaryPhoneNumber(profileDTO.getPrimaryPhoneNumber());
-        userDocument.setSecondaryPhoneNumber(profileDTO.getSecondaryPhoneNumber());
+        userDocument.setPhoneNumber(profileDTO.getPhoneNumber());
         userDocument.setSkills(profileDTO.getSkills());
         userDocument.setWorkPreference(profileDTO.getWorkPreference());
         userDocument.setPhoto(profileDTO.getPhoto());

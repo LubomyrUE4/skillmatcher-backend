@@ -21,6 +21,5 @@ public class ProfileResponse {
     private String city;
     private String country;
     private Boolean openToTravel;
-    private String primaryPhoneNumber;
-    private String secondaryPhoneNumber;
+    private String phoneNumber;
 }
